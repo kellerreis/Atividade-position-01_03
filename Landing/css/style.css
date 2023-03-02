@@ -1,3 +1,10 @@
+/*import da fonte*/
+
+@font-face {
+    font-family: "Keller";
+    src: url(../assets/fonts/font_bebas_neue/BebasNeue-Regular.ttf);
+}
+
 /*reset css */
 * {
     margin: 0;
@@ -5,6 +12,38 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: aqua;
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 10px solid grey;
+    height: 100%;
+}
+
+header {
+    background-color: #f9003d;
+    height: 60px;
+}
+/*flex box no cabeçalho*/
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    border: 2px solid wheat;
+    width: 600px;
+}
+
+header nav a {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid green;
+    font-family: "keller";
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
